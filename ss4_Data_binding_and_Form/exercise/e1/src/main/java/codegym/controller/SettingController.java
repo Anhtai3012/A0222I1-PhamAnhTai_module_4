@@ -2,7 +2,9 @@ package codegym.controller;
 
 import codegym.model.Setting;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -16,10 +18,10 @@ public class SettingController {
         return modelAndView;
     }
 
-    @GetMapping("config")
-    public ModelAndView config(){
-        ModelAndView modelAndView= new ModelAndView("config", "setting", setting);
-        return modelAndView;
+    @GetMapping("/config")
+    public String config(Model model ){
+        model.addAttribute("setting",new Setting("",0,true,""));
+        return "/config";
     }
 
     @PostMapping("save")

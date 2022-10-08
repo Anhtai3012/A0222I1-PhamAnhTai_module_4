@@ -13,24 +13,24 @@
 </head>
 <body>
 <h1>view-edit</h1>
-<table>
-    <form:form method="post" modelAttribute="setting" action="/save">
+<form:form action="/save" method="post" modelAttribute="setting">
+    <table>
         <tr>
-            <td>Languages</td>
+            <td>languages</td>
             <td>
-                <form:select path="language" cssClass="form-select">
-                    <form:option value="English">English</form:option>
-                    <form:option value="Vietnamese">Vietnamese</form:option>
-                    <form:option value="Japanese">Japanese</form:option>
-                    <form:option value="Chinese">Chinese</form:option>
-                </form:select>
+                <form:select path="language" >
+                        <form:option value="English">English</form:option>
+                        <form:option value="Vietnamese">Vietnamese</form:option>
+                        <form:option value="Japanese">Japanese</form:option>
+                        <form:option value="Chinese">Chinese</form:option>
+                    </form:select>
             </td>
         </tr>
         <tr>
-            <td>Page Size:</td>
+            <td>Page Size</td>
             <td>
-                Show
-                <form:select path="pageSize">
+                show
+                <form:select path="pageSize" >
                     <form:option value="5">5</form:option>
                     <form:option value="10">10</form:option>
                     <form:option value="15">15</form:option>
@@ -38,30 +38,37 @@
                     <form:option value="50">50</form:option>
                     <form:option value="100">100</form:option>
                 </form:select>
-                emails per page
             </td>
+            <td>email per page</td>
         </tr>
         <tr>
-            <td>Spams filter:</td>
-            <td class="d-flex">
-                <form:checkbox path="spamFilter" value="true" cssClass="form-check"/>
+            <td>Spams filter</td>
+            <td>
+                <form:checkbox path="spamFilter" value="true">
+                </form:checkbox>
+            </td>
+            <td>
                 Enable spams filter
             </td>
         </tr>
         <tr>
             <td>Signature</td>
             <td>
-                <form:textarea path="signature" rows="7" cols="20"></form:textarea>
+                <form:textarea path="signature">
+
+                </form:textarea>
             </td>
         </tr>
         <tr>
             <td></td>
             <td>
                 <button type="submit">Update</button>
-                <button type="button">Cancel</button>
+            </td>
+            <td>
+                <button type="reset">Cancel</button>
             </td>
         </tr>
-    </form:form>
-</table>
+    </table>
+</form:form>
 </body>
 </html>
