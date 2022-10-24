@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/result" th:object="${user}" method="post">
+    First Name:<input type="text" th:field="*{firstName}">
+    <span style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span> <br>
+    Last Name:<input type="text" th:field="*{lastName}">
+    <span style="color: red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span> <br>
+    Phone Number:<input type="text" th:field="*{phone}">
+    <span style="color: red" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span> <br>
+    Age:<input type="number" th:field="*{age}">
+    <span style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span> <br>
+    Email:<input type="text" th:field="*{email}">
+    <span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span> <br>
+    <button type="submit">save</button>
+</form>
+</body>
+</html>

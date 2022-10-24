@@ -20,124 +20,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbdea07-a85d-429b-939e-ac6a5cb2f672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/java/codegym/controller/HealthDeclarationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/java/codegym/model/HealthDeclaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/java/codegym/service/HealthDeclarationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/demo/main/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/demo/main/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/demo/main/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/demo/main/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/demo/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/modules/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/modules/e1.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/configuration/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/configuration/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/controller/SongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/service/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/service/ISongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/service/impl/SongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/demo/.idea/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/demo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/service/impl/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/java/com/codegym/product/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/resources/templates/category/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/resources/templates/category/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/resources/templates/product/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1/src/main/resources/templates/product/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/demo/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/demo/src/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/modules/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/configuration/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/java/codegym/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/webapp/WEB-INF/views/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/exercise/e1/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/repository/IGeneralRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/repository/impl/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/repository/impl/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/service/IGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/service/impl/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_JPA/practice/p1/src/main/java/codegym/service/impl/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/src/main/java/com/example/demo/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/demo1/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/BlogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/java/com/codegym/blog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/resources/templates/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/main/resources/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1.1/src/test/java/com/codegym/blog/BlogApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/java/com/codegym/blog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_Spring_boot/exercise/e1/src/main/resources/templates/blog/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_Spring_MVC/practice/p2/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_Spring_MVC/practice/p2/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss2_Spring_Controller/exercise/e1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_Spring_Controller/exercise/e1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2_Spring_Controller/practice/p5/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_Spring_Controller/practice/p5/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/codegym/configuaration/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/codegym/configuaration/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/codegym/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/codegym/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/codegym/service/IProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/codegym/service/IProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/codegym/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/codegym/service/impl/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/e1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/e1-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/configuaration/AppConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/configuaration/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/service/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codegym/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codegym/service/impl/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/configuaration/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/configuaration/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/service/IProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/classes/java/main/codegym/service/impl/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/libs/e2-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/configuaration/AppConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/configuaration/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/service/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/java/codegym/service/impl/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e2/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/p1/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e3/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/build/classes/java/main/codegym/controller/SettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/build/classes/java/main/codegym/controller/SettingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/build/libs/e1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/build/libs/e1-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/java/codegym/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/java/codegym/controller/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/webapp/WEB-INF/views/config.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/webapp/WEB-INF/views/config.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_Data_binding_and_Form/exercise/e1/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/modules/e1.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/.idea/modules/e1.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/build/classes/java/main/codegym/controller/SongController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/build/classes/java/main/codegym/controller/SongController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/build/libs/e1-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/build/libs/e1-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/controller/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/java/codegym/controller/SongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/exercise/e1/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/practice/p1/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_Query_Database_and_ORM/practice/p1/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,9 +177,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss18_Spring_boot/exercise/e1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -285,6 +288,14 @@
       <workItem from="1665008004551" duration="917000" />
       <workItem from="1665014762657" duration="343000" />
       <workItem from="1665139968535" duration="310000" />
+      <workItem from="1665584158858" duration="392000" />
+      <workItem from="1665624192600" duration="611000" />
+      <workItem from="1665677486077" duration="71000" />
+      <workItem from="1665735391050" duration="1260000" />
+      <workItem from="1665744526430" duration="2370000" />
+      <workItem from="1665803761662" duration="1797000" />
+      <workItem from="1665989759375" duration="599000" />
+      <workItem from="1666003997697" duration="20000" />
     </task>
     <servers />
   </component>
@@ -316,10 +327,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1664875837417" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1664968253148">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1665735420030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1664968253148" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1665735420030" />
     <state width="1128" height="227" key="GridCell.Tab.0.bottom" timestamp="1664969259610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

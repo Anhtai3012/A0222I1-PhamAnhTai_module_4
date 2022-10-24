@@ -12,23 +12,24 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 
 public class SongController {
+
     //ISongService iSongService = new SongService();
     @Autowired
     private ISongService iSongService;
 
-    @RequestMapping("/list")
+    @RequestMapping("")
     public String ShowList(Model model){
         model.addAttribute("song",iSongService.findAll());
         return "list";
     }
     @GetMapping("/create")
     public String ShowCreate(Model model){
-            model.addAttribute("music",new Song() );
+            model.addAttribute("song",new Song() );
         return "/create";
     }
     @PostMapping("/save")
-    public String addNew(RedirectAttributes redirectAttributes,@ModelAttribute("music") Song song){
+    public String addNew(RedirectAttributes redirectAttributes,@ModelAttribute("song") Song song){
         iSongService.save(song);
-        return "redirect:/list";
+        return "redirect:/";
     }
 }

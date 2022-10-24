@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/update}" method="post" th:object="${product}">
+  <input th:field="*{id}" hidden><br>
+    Name: <input th:field="*{name}"><br>
+    <p style="color: red" th:errors="*{name}"></p><br>
+    price: <input th:field="*{price}"><br>
+    <p style="color: red" th:errors="*{price}"></p><br>
+    status: <input th:field="*{status}"><br>
+    <p style="color: red" th:errors="*{status}"></p><br>
+    Manufacturer: <input th:field="*{manufacturer}"><br>
+    Category:   <select th:field="*{category}">
+                <option th:each="item:${list}" th:value="${item.id} " th:text="${item.name}">
+                </option>
+                </select>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -8,15 +8,15 @@
 <h3>
     <a th:href="@{/}">Back to List</a>
 </h3>
-<form action="/save" method="post" th:object="${music}">
+<form action="/save" method="post" th:object="${song}">
     <label>Name</label><br>
-    <input type="text" th:fied="*{name}"><br>
+    <input type="text" th:field="*{name}"><br>
     <label>Singer</label><br>
-    <input type="text" th:fied="*{singer}"><br>
+    <input type="text" th:field="*{singer}"><br>
     <label>Genre</label><br>
-    <input type="text" th:fied="*{genre}"><br>
+    <input type="text" th:field="*{genre}"><br>
     <label>Link</label><br>
-    <input type="text" th:fied="*{link}"><br>
+    <input type="text" th:field="*{link}"><br>
     <button type="submit">Save</button>
 </form>
 </body>

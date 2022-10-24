@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 25%;
+            height: 25%;
+        }
+
+        td{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<form  action="save" method="post" th:object="${comment}">
+    <div>
+        <h2 id="hTitle" th:text="${picture.name}"></h2>
+        <input id="i" type="hidden" name="picture.id" th:value="${picture.id}">
+        <input id="a" type="hidden" name="picture.name" th:value="${picture.name}">
+        <!--        <input id="a" type="text" th:field="*{picture.name}">-->
+        <input id="b" type="hidden" name="picture.url" th:value="${picture.url}">
+        <input id="c" type="hidden" name="picture.displayDate" th:value="${picture.displayDate}">
+        <h2 id="dDate" name="displayDate" th:text="${picture.displayDate}"></h2>
+        <img id="img-of-the-day" th:src="${picture.url}">
+        <div>
+            <select name="vote">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            Author
+            <input type="text" name="author">
+        </div>
+        <div>
+            Feedback
+            <input type="text" name="feedback">
+        </div>
+        <button>Comment</button>
+    </div>
+
+</form>
+<table style="width: 100%;margin-top:25px;">
+    <thead>
+    <th>Feedback</th>
+    <th>Author</th>
+    <th>Action</th>
+    </thead>
+    <tbody>
+    <tr th:each="c: ${picture.comments}">
+        <td th:text="${c.feedback}" />
+        <td th:text="${c.author}" />
+        <td>[[${c.liked}]] <a th:href="@{/home?c=__${c.id}__}">Like</a></td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    const a = document.getElementById('a');
+    if(a.value == ''){
+        let query = 'https://api.nasa.gov/planetary/apod?api_key=bnCdaw8t8XMBoBjAg5lPf3ZuB2hRKnbAtmqAJKh5';
+        let request = new XMLHttpRequest();
+        request.open('GET', query);
+        request.onload = function () {
+            if (request.status === 200) {
+                let response = JSON.parse(request.responseText);
+                document.getElementById('img-of-the-day').setAttribute('src', response.url);
+                document.getElementById('hTitle').textContent = response.title;
+                document.getElementById('a').value = response.title;
+                document.getElementById('dDate').textContent = response.date;
+                document.getElementById('b').value = response.url;
+                document.getElementById('c').value = response.date;
+            }
+        };
+        request.send();
+    }
+    else {
+
+    }
+
+</script>
+</body>
+</html>
