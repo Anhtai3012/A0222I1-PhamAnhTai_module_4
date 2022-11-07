@@ -1,8 +1,16 @@
 package com.codegym.borrow_book.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "name_book")
     private String nameBook;
+
     private int amount;
 
     public Book() {

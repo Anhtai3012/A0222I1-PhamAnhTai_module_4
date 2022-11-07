@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Create student</h2>
+<p>Name: </p>
+<input type="text" id="nameStudent"/>
+<p>Point: </p>
+<input type="number" id="point"/>
+<p style="color: red" id="errPoint"></p>
+<br>
+<p>Gender: </p>
+<input type="text" id="gender"/>
+<input type="button" id="buttonClick" value="Create new"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $('#buttonClick').click(function (event) {
+             let nameStudent = document.getElementById("nameStudent").value;
+             let point = document.getElementById("point").value;
+             let gender = document.getElementById("gender").value;
+             let jsonText = {
+                 "nameStudent": nameStudent,
+                 "point": point,
+                 "gender": gender
+             }
+            console.log(jsonText)
+             $.ajax({
+                 headers: {
+                     'Accept': 'application/json',
+                     'Content-Type': 'application/json'
+                 },
+                 type: "POST",
+                 url:"http://localhost:8080/api/create",
+                 data: JSON.stringify(jsonText),
+                 success: function (event) {
+                      alert("Thêm mới thành công")
+                 },
+                 error: function (event) {
+                     if(event.status == 400) {
+                         document.getElementById("errPoint").innerText =event.responseJSON.point;
+                     }
+                 }
+             })
+        })
+    })
+</script>
+</body>
+</html>

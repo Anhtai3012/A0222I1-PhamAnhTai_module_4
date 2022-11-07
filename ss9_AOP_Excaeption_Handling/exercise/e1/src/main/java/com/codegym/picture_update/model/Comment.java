@@ -1,9 +1,11 @@
 package com.codegym.picture_update.model;
 
 import org.hibernate.annotations.Cascade;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 import javax.persistence.*;
-
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @Entity
 public class Comment {
     @Id

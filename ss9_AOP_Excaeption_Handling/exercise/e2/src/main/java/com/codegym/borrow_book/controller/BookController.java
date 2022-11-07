@@ -9,15 +9,18 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
 @Controller
 @Aspect
+@Component
 public class BookController {
 
     private Map<Integer, Book> bookMap=new HashMap<>();
@@ -31,7 +34,7 @@ public class BookController {
     }
 
     @GetMapping("/toRentBook/{id}")
-    public ModelAndView viewRentBook(@PathVariable int id) {
+    public ModelAndView viewRentBook(@PathVariable(value = "id") int id) {
         Book book =bookService.getBookById(id);
         Random rand = new Random();
         int random = rand.nextInt(99999- 10000) + 10000;
@@ -44,7 +47,7 @@ public class BookController {
     }
 
     @PostMapping("/rentBook/{random}")
-    public ModelAndView rentBook(@ModelAttribute Book book, @PathVariable int random) throws RentBookException {
+    public ModelAndView rentBook(@ModelAttribute Book book, @PathVariable(value = "random") int random) throws RentBookException {
         if(bookService.rentBook(book)) {
             bookMap.put(random, book);
             System.out.println(random);
@@ -53,7 +56,8 @@ public class BookController {
         throw new RentBookException() ;
     }
 
-    @AfterThrowing(pointcut = "execution(public * com.codegym.borrow_book.controller.BookController.rentBook()),")
+    @AfterThrowing(pointcut = "execution(public * com.codegym.borrow_book.controller.BookController.rentBook())")
+
     public void writeLog() {
         System.out.println("Hello");
     }
@@ -79,6 +83,13 @@ public class BookController {
             return new ModelAndView("list","books",bookService.getAllBooks());
         }
         throw new GiveBookBackException();
+    }
+
+    @GetMapping("edit/{id}")
+    public ModelAndView edit(@PathVariable("id") Integer id){
+        Optional<Book> book = Optional.ofNullable(bookService.getBookById(id));
+        ModelAndView modelAndView = new ModelAndView("/edit");
+        return modelAndView;
     }
 
 

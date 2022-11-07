@@ -1,11 +1,13 @@
 package com.codegym.picture_update.model;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
-
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @Entity
 public class Picture {
     @Id

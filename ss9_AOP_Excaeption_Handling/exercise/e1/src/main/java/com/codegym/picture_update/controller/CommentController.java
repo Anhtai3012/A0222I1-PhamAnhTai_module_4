@@ -23,23 +23,5 @@ public class CommentController {
     @Autowired
     private PictureRepository pictureRepository;
 
-    @GetMapping("home")
-    public String home(Model model, @RequestParam(required = false) Integer c) {
-        if(c != null){
-            commentRepository.update(c);
-        }
 
-        model.addAttribute("comment", new Comment());
-        ZonedDateTime tz = ZonedDateTime.now(ZoneId.of("America/New_York"));
-        Optional<Picture> optionalPicture = pictureRepository.find(tz.toLocalDate());
-        model.addAttribute("picture", optionalPicture.isPresent() ? optionalPicture.get() : new Picture());
-
-        return "home";
-    }
-
-    @PostMapping("save")
-    public String save(Comment comment) {
-        commentRepository.save(comment);
-        return "redirect:/home";
-    }
 }
