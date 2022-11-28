@@ -42,17 +42,17 @@ public class CheckLoginAOP {
             throw new NotFoundEmployee("Not found employee have this account. Try Again!!!");
         }
     }
-
-
-    @SneakyThrows
-    @Before("execution(* com.example.demo.controller.EmployeeController.*(..))")
-    public void checkAuthentication() {
-        Cookie[] cookie = request.getCookies();
-        for (Cookie c : cookie) {
-            if (list.contains(c.getValue())) {
-                return;
-            }
-        }
-        throw new NotPermission("You not permission to edit employee");
-    }
+//
+//
+//    @SneakyThrows
+//    @Before("execution(* com.example.demo.controller.EmployeeController.*(..))")
+//    public void checkAuthentication() {
+//        Cookie[] cookie = request.getCookies();
+//        for (Cookie c : cookie) {
+//            if (list.contains(c.getValue())) {
+//                return;
+//            }
+//        }
+//        throw new NotPermission("You not permission to edit employee");
+//    }
 }

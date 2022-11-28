@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <form th:action="@{/customer/save}" th:object="${customer}" method="post">
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" th:field="*{name}" required></td>
+            </tr>
+            <tr>
+                <th>Date of birthday:</th>
+                <td><input type="date" th:field="*{date_of_birthday}" required></td>
+            </tr>
+            <tr>
+                <th>Id Card:</th>
+                <td>
+                    <input type="text" th:field="*{id_card}" required>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" th:field="*{gender}" value="0" th:text="Male" >
+                    <input type="radio" th:field="*{gender}" value="1" th:text="Famale">
+                    <input type="radio" th:field="*{gender}" value="2" th:text="Other">
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Number:</th>
+                <td><input type="text" th:field="*{phone_number}" required></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="text" th:field="*{email}" required></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><input type="text" th:field="*{address}" required></td>
+            </tr>
+            <tr>
+                <th>customerType:</th>
+                <td>
+                    <select th:field="*{customerType}">
+                        <option value="" th:each="c: ${customerTypes}" th:value="${c.id}" th:text="${c.name}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><button type="submit">Save</button></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

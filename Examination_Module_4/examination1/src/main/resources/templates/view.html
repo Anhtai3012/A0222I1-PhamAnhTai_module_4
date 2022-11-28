@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="" method="get" th:object="${serve}">
+    <table>
+        <tr>
+            <td>MA GIAO DICH</td>
+            <td th:field="*{code}"></td>
+        </tr>
+        <tr>
+            <td>LOAI BAT DONG SAN</td>
+            <td th:field="*{service_type}"></td>
+        </tr>
+        <tr>
+            <td>NGAY GIAO DICH</td>
+            <td  th:field="*{#dates.format(date,'MM/dd/yyyy')}"></td>
+        </tr>
+        <tr>
+            <td>DON GIA</td>
+            <td th:field="*{price}"></td>
+        </tr>
+        <tr>
+            <td>DIEN TICH</td>
+            <td th:field="*{area}"></td>
+        </tr>
+        <tr>
+            <td>TEN KHACH HANG</td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td>So DIEN THOAI</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>EMAIL</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">close</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

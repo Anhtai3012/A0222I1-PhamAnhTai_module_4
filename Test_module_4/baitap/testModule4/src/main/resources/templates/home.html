@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-10">
+        <nav th:replace="header::top"></nav>
+
+    </div>
+    <div class="col"></div>
+</div>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-10">
+        <table class="table table-dark table-striped">
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Type Question</th>
+                <th>Day Create</th>
+                <th>Status Question</th>
+                <th>Action</th>
+
+            </tr>
+            <tr th:each="item,state : ${list}">
+                <td th:text="${state.count}"></td>
+                <td th:text="${item.title}"></td>
+                <td th:text="${item.typeQuestion.name}"></td>
+                <td th:text="${#dates.format(item.date_create,'dd/MM/yyyy')}"></td>
+                <td th:text="${item.statusQuestion.name}"></td>
+                <td>
+                    <button class="btn btn-warning"
+                            th:onclick="showInfoEdit([[${item.id}]],[[${item.title}]],[[${item.content}]],[[${item.answer}]],[[${item.typeQuestion.id}]],[[${item.statusQuestion.id}]])">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button th:onclick="showInfoDelete([[${item.id}]])" type="button"
+                            class="btn btn-danger"
+                            data-bs-toggle="modal" data-bs-target="#delete">
+                        <i class="fa-solid fa-eraser"></i>
+                    </button>
+                    <button th:onclick="showInfo([[${item.id}]])" type="button"
+                            class="btn btn-info">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <div class="col"></div>
+</div>
+
+<!--page-->
+<div>
+    <ul class="pagination justify-content-center">
+        <li>
+            <a class="page-link" th:href="@{'/'(page=0,title=${title},type=${type})}">
+                First
+            </a>
+        </li>
+        <li class="page-item" th:each="i: ${#numbers.sequence(1,  list.totalPages)}">
+
+            <a class="page-link"
+               th:href="@{'/'(page=${i - 1},title=${title},type=${type})}"
+               th:text="${i}">
+            </a>
+
+        </li>
+        <li>
+            <a class="page-link" th:href="@{'/'(page=${list.totalPages - 1},title=${title},type=${type})}">
+                Last
+            </a>
+        </li>
+
+    </ul>
+</div>
+<!--delete-->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Delete this item <span id="nameDelete"></span>?
+                <input type="hidden" id="deleteId" name="id">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" id="deleteIt" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--create-->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="example1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="example2ModalLabel">Create Question</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <td>Title</td>
+                            <td>
+                                <label>
+                                    <input type="text" id="update-title">
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-update-title"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Content</td>
+                            <td>
+                                <label>
+
+                                    <textarea id="update-content" rows="5" cols="20"></textarea>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-update-content"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Type Question</td>
+                            <td>
+                                <label>
+                                    <select name="type" id="typeCreate">
+                                        <option selected value="">- chose type -</option>
+                                        <option th:each="item: ${listType}" th:value="${item.id}"
+                                                th:text="${item.name}"></option>
+                                    </select>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-update-type"></span>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="update-Button">Update</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--edit-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="example1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Question</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input id="idEdit" type="hidden">
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <td>Title</td>
+                            <td>
+                                <label>
+                                    <input type="text" id="edit-title">
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-edit-title"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Content</td>
+                            <td>
+                                <label>
+
+                                    <textarea id="edit-content"></textarea>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-edit-content"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Answer</td>
+                            <td>
+                                <label>
+
+                                    <textarea id="edit-answer" rows="5" cols="20"></textarea>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-edit-answer"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Type Question</td>
+                            <td>
+                                <label>
+                                    <select name="type" id="typeEdit">
+                                        <option selected value="">- chose type -</option>
+                                        <option th:each="item: ${listType}" th:value="${item.id}"
+                                                th:text="${item.name}"></option>
+                                    </select>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-edit-type"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Status Question</td>
+                            <td>
+                                <label>
+                                    <select name="type" id="statusEdit">
+                                        <option th:each="item: ${listStatus}" th:value="${item.id}"
+                                                th:text="${item.name}"></option>
+                                    </select>
+                                </label>
+                            </td>
+                            <td>
+                                <span style="color: red" id="error-edit-status"></span>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="edit-Button">Update</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Info-->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Info Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-dark">
+                    <tr>
+                        <td>Title</td>
+                        <td>
+                            <span id="title"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>
+                            <span id="content"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Answer</td>
+                        <td>
+                            <span id="answer"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type Question</td>
+                        <td>
+                            <span id="typeQuestion"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date Create</td>
+                        <td>
+                            <span id="dateCreate"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Status Question</td>
+                        <td>
+                            <span id="status"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="statusClose">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--message-->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Message Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="message"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="messageClose">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script th:src="@{/controllerAPI.js}" type="text/javascript"></script>
+<script th:src="@{/support_converter.js}" type="text/javascript"></script>
+</body>
+</html>

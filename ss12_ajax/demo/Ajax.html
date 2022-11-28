@@ -41,6 +41,7 @@
                       alert("Thêm mới thành công")
                  },
                  error: function (event) {
+                     
                      if(event.status == 400) {
                          document.getElementById("errPoint").innerText =event.responseJSON.point;
                      }

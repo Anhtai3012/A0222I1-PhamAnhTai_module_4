@@ -1,0 +1,20 @@
+B1: Cài Heroku CLI
+B2: Vào trang chủ heroku => đăng nhập
+B3. Đăng nhập heroku ở CLI bằng heroku login
+B4. Tạo ứng dụng bằng lệnh heroku create
+B5. Tạo ứng dụng spring boot
+B5.5: thêm file Procfile với đoạn config được gửi bên dưới 
+B6: nối git local với git của heroku bằng các lệnh
+- git init
+- git remote add heroku link-git
+- git checkout -b "main"
+- git add .
+- git commit -m"..."
+- git push heroku main
+B7> Cài Postgre
+B8. Cài thư viện JPA và connect Postgre cho spring boot
+B9. config trong file application.
+
+
+
+

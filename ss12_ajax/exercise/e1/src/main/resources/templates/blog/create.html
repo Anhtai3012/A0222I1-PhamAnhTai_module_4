@@ -2,12 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Create blog</title>
+    <title>Create Blog</title>
 </head>
 <body>
-<h1>Create blog</h1>
+<h1>Create Blog</h1>
 <p>
-    <a href="/blogs">Blog list</a>
+    <a href="/">Blog list</a>
 </p>
 <th:block th:if="${message}">
     <p th:text="${message}"></p>
@@ -15,18 +15,28 @@
 <form th:action="@{/create-blog}" th:object="${blog}" method="post">
     <table>
         <tr>
-            <td>Title</td>
-            <td><input type="text" th:field="*{title}"/></td>
+            <td>Name Blog:</td>
+            <td><input type="text" th:field="*{nameBlog}"/></td>
         </tr>
-        <td>Creator:</td>
-        <td>
-            <select th:field="*{user}">
-                <option th:each="p : ${users}" th:value="${p.idUser}" th:text="${p.toString()}"></option>
-            </select>
-        </td>
+        <tr>
+            <td>Summary:</td>
+            <td><input type="text" th:field="*{quickView}"/></td>
+        </tr>
+        <tr>
+            <td>Content Blog:</td>
+            <td><textarea th:field="*{content}"/></td>
+        </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Create blog"></td>
+            <td><input type="submit" value="Create Blog"></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>
+                <select th:field="*{category}">
+                    <option th:each="c : ${categories}" th:value="${c.id}" th:text="${c.nameCategory}"></option>
+                </select>
+            </td>
         </tr>
     </table>
 </form>

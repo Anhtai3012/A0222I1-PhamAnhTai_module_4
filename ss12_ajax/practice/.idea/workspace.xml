@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7784fe90-c950-46c3-b43c-c8556f32449d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/controller/Tranfers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/controller/WrittingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/model/Writing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/repository/WritingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/service/WritingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/service/impl/WritingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/frag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/writing/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case study Trung Tutor/Web_Back-end_Development_with_Spring_MVC_2.0" beforeDir="false" afterPath="$PROJECT_DIR$/../../case study Trung Tutor/Web_Back-end_Development_with_Spring_MVC_2.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_session_cookie/exercise/spring-shopping-cart" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss10_session_cookie/exercise/spring-shopping-cart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_session_cookie/practice/spring-save-user" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss10_session_cookie/practice/spring-save-user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/BlogUpdateApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/model/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/model/SearchBlogName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/repository/BlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/service/IBlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/service/ICategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/service/impl/BlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/java/com/codgym/demo/blogupgrade/service/impl/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/blog/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/blog/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/blog/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/blog/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/category/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/error1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/exercise/e1/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_webservice/practice/spring-customer-management-restful" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_webservice/practice/spring-customer-management-restful" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss1_Spring_MVC/practice/p2/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss1_Spring_MVC/practice/p2/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_Spring_Controller/practice/p5/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_Spring_Controller/practice/p5/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_Query_Database_and_ORM/practice/p1/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_Query_Database_and_ORM/practice/p1/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss7_Spring_boot/exercise/springboot-thymeleaf-crud-pagination-sorting-webapp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss7_Spring_boot/exercise/springboot-thymeleaf-crud-pagination-sorting-webapp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_AOP_Excaeption_Handling/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_AOP_Excaeption_Handling/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss9_AOP_Excaeption_Handling/practice/p2/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss9_AOP_Excaeption_Handling/practice/p2/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2HDdp63LVXWuNJrtrJS95YiO0X7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7784fe90-c950-46c3-b43c-c8556f32449d" name="Default Changelist" comment="" />
+      <created>1667823767421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667823767421</updated>
+      <workItem from="1667823768978" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

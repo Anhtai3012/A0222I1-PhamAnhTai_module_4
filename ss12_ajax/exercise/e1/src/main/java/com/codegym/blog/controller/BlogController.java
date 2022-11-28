@@ -1,80 +1,105 @@
 package com.codegym.blog.controller;
 
 import com.codegym.blog.model.Blog;
-import com.codegym.blog.model.User;
-import com.codegym.blog.service.BlogService;
-import com.codegym.blog.service.UserService;
+import com.codegym.blog.model.Category;
+import com.codegym.blog.model.SearchBlogName;
+import com.codegym.blog.repository.BlogRepository;
+import com.codegym.blog.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Optional;
 
+@RestController
 @Controller
-public class BlogController {
+public class BlogController{
     @Autowired
-    private BlogService blogService;
+    private BlogRepository blogRepository;
+
     @Autowired
-    private UserService userService;
-    @ModelAttribute("users")
-    public List<User> blogs(){
-        return (List<User>) userService.findAll();
+    private CategoryRepository categoryRepository;
+
+    @ModelAttribute("categories")
+    public Iterable<Category> categories() {
+        return categoryRepository.findAll();
     }
 
-    @GetMapping({"/blogs","/"})
-    public ModelAndView showBlog(){
-        return new ModelAndView("blog/list","blogs",blogService.findAll());
+    @GetMapping
+    public ModelAndView listBlog() {
+        Iterable<Blog> blogs = blogRepository.findAll();
+        return new ModelAndView("list", "blogs", blogs);
     }
+
+    @PostMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public List<Blog> getListSearch(@RequestBody SearchBlogName search) {
+//        List<Blog> listBlogs = blogRepository.findAllByNameBlogContaining(search.getBlogName());
+        List<Blog> listBlogs = blogRepository.SearchName(search.getBlogName());
+        return listBlogs;
+    }
+
     @GetMapping("/create-blog")
-    public ModelAndView createBlog(){
-        return new ModelAndView("blog/create","blog", new Blog());
+    public ModelAndView showCreateForm() {
+        return new ModelAndView("/blog/create", "blog", new Blog());
     }
+
     @PostMapping("/create-blog")
-    public ModelAndView createBlog(@ModelAttribute(name = "blog") Blog blog){
-        blogService.save(blog);
-        ModelAndView modelAndView = new ModelAndView("blog/create");
+    public ModelAndView saveBlog(@ModelAttribute("blog") Blog blog) {
+        blogRepository.save(blog);
+        ModelAndView modelAndView = new ModelAndView("/blog/create");
         modelAndView.addObject("blog", new Blog());
-        modelAndView.addObject("message", "New blog created successfully");
+        modelAndView.addObject("message", "New customer created successfully");
         return modelAndView;
     }
+
+    @GetMapping("/view-blog/{id}")
+    public ModelAndView showFullBlog(@PathVariable Long id) {
+        Optional<Blog> blog = blogRepository.findById(id);
+        if (blog != null) {
+            return new ModelAndView("/blog/view", "blog", blog);
+
+        } else {
+            ModelAndView modelAndView = new ModelAndView("/error");
+            return modelAndView;
+        }
+    }
+
     @GetMapping("/edit-blog/{id}")
-    public ModelAndView showEditForm(@PathVariable Long id){
-        Blog blog = blogService.findById(id);
-        if(blog!=null) {
-            return new ModelAndView("blog/edit","blog",blog);
-        }else {
-            return new ModelAndView("/error1");
+    public ModelAndView showEditForm(@PathVariable Long id) {
+        Blog blog = blogRepository.findById(id).orElse(null);
+        if (blog != null) {
+            return new ModelAndView("/blog/edit", "blog", blog);
+        } else {
+            return new ModelAndView("/error");
         }
     }
 
     @PostMapping("/edit-blog")
-    public ModelAndView updateBlog(@ModelAttribute("blog") Blog blog){
-        blogService.save(blog);
-        ModelAndView modelAndView = new ModelAndView("blog/edit");
+    public ModelAndView editBlog(@ModelAttribute("blog") Blog blog) {
+        blogRepository.save(blog);
+        ModelAndView modelAndView = new ModelAndView("/blog/edit");
         modelAndView.addObject("blog", blog);
         modelAndView.addObject("message", "Blog updated successfully");
         return modelAndView;
     }
-    @GetMapping("/delete-blog/{id}")
-    public ModelAndView showDeleteForm(@PathVariable Long id){
-        Blog blog = blogService.findById(id);
-        if(blog!=null) {
-            ModelAndView modelAndView = new ModelAndView("blog/delete");
-            modelAndView.addObject("blog", blog);
-            return modelAndView;
 
-        }else {
-            return new ModelAndView("/error1");
+    @GetMapping("/delete-blog/{id}")
+    public ModelAndView showDeleteForm(@PathVariable Long id) {
+        Optional<Blog> blog = blogRepository.findById(id);
+        if (blog != null) {
+            return new ModelAndView("/blog/delete", "blog", blog);
+        } else {
+            return new ModelAndView("/error");
         }
     }
 
     @PostMapping("/delete-blog")
-    public String deleteBlog(@ModelAttribute("blog") Blog blog){
-        blogService.remove(blog.getIdBlog());
-        return "redirect:/blogs";
+    public String deleteBlog(@ModelAttribute("blog") Blog blog) {
+        blogRepository.deleteById(blog.getId());
+        return "redirect:/";
     }
 }

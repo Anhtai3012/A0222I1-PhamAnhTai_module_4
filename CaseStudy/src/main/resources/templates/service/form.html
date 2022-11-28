@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <form th:action="@{/service/create}" th:object="${service}" method="post">
+           Name:<input type="text" th:field="*{name}"> <br>
+           Area:<input type="text" th:field="*{area}"> <br>
+           Cost:<input type="text" th:field="*{service_cost}"> <br>
+     Max people:<input type="text" th:field="*{max_people}"> <br>
+  Standard Room:<input type="text" th:field="*{standard_room}"> <br>
+    Description:<input type="text" th:field="*{description_other_convenience}"> <br>
+      Pool Area:<input type="text" th:field="*{pool_area}"> <br>
+          Floor:<input type="text" th:field="*{number_of_floors}"> <br>
+           Text:<input type="text" th:field="*{facility_text}"> <br>
+      Rent Type: <select th:field="*{rentType}">
+        <option th:each="r:${rentTypes}" th:value="${r.id}" th:text="${r.name}"></option>
+                    </select> <br>
+   Service Type:<select th:field="*{serviceType}">
+        <option th:each="s:${serviceTypes}" th:value="${s.id}" th:text="${s.name}"></option>
+    </select> <br>
+        <button type="submit">Save</button>
+    </form>
+</center>
+</body>
+
+</html>
